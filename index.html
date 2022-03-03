@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <h2 id="displayPass">
+
+        </h2>
+        <form action="">
+            <div>
+                <label for="length">Length of Password</label>
+                <input type="number" name="" id="length" min="8" max="40" value="8">
+            </div>
+            <div>
+                <input type="checkbox" name="" id="lower" checked>
+                <label for="lower">Lower Case</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="upper" checked>
+                <label for="upper">Upper Case</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="number" checked>
+                <label for="number">Number</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="symbol" checked>
+                <label for="symbol">Symbol</label>
+            </div>
+            <div class="buttons">
+                <button onclick="generate(event)">Generate</button>
+                <button type="button" onclick="copyText()">Copy</button>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
